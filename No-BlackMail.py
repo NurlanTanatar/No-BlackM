@@ -16,7 +16,7 @@ F_CL = '\033[0m'
 
 os.system('clear')
 print(f'{YELLOW}{BOLD}[!!] {RED}Разработчик инструмента отказывается брать на себя ответственность за ваши действия: {RESET}')
-sleep(2)
+sleep(3.7)
 os.system('clear')
 if os.path.exists('dataFile.txt'):
    print(f'{YELLOW}{BOLD}[1] {LI_G}Перезаписать данные в файл.{RESET}')
