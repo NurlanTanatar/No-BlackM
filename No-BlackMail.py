@@ -3,7 +3,6 @@ from time import sleep
 from bs4 import BeautifulSoup as bs
 
 dataAV = []
-
 RESET ='\033[0m'
 UNDERLINE = '\033[04m'
 GREEN = '\033[32m'
@@ -14,10 +13,17 @@ URL_L = '\033[36m'
 LI_G='\033[92m'
 F_CL = '\033[0m'
 
-os.system('clear')
-print(f'{YELLOW}{BOLD}[!!] {RED}Разработчик инструмента отказывается\nбрать на себя ответственность за ваши действия: {RESET}')
-sleep(2.5)
-os.system('clear')
+if os.path.exists('.banner_840'):
+    pass
+else:
+    os.system('clear')
+    bannerTX = open('README.md', encoding='utf-8').read()
+    print(bannerTX[265:729])
+    print(f'{LI_G}Этот текст покажется лишь один раз!{RESET}')
+    open('.banner_840','w')
+    input(f'{LI_G}Напишите что нибудь чтобы очистить экран: {RESET}')
+    os.system('clear')
+
 if os.path.exists('dataFile.txt'):
    print(f'{YELLOW}{BOLD}[1] {LI_G}Перезаписать данные в файл.{RESET}')
    print(f'{YELLOW}{BOLD}[2] {LI_G}Добавить к остальным.{RESET}\n')
