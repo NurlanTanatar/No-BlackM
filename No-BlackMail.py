@@ -155,10 +155,10 @@ try:
                                 fileD.write(data +'\n')
                             fileD.write(f'[-] https://api.whatsapp.com/send?phone={str(number)}&text=Hello,%20this%20is%20NO-Blackmail')
                             fileD.write(f'\n[-] Все имена с ссылок: {str(name)}\n\n')
-                        if name[0] in name:
-                            print(f'\n{YELLOW}{BOLD}[+] {LI_G}Все имена с ссылок: {str(name)}')
-                        else:
+                        if not name:
                            pass
+                        else:
+                           print(f'\n{YELLOW}{BOLD}[+] {LI_G}Все имена с ссылок: {RESET}{str(name)}')
                         print(f'{YELLOW}{BOLD}[+] {LI_G}Данные о номере: +{str(number)} добавлены в файл {RESET}dataFile.txt')
                 
                 get_url_name_avito(number)
