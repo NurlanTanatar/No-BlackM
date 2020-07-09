@@ -129,8 +129,6 @@ try:
 
                             name.append(nameU.text)
                             dataAV.append(f'[{count}] {linkAV}')
-                            if count == 5:
-                                break
 
                         with open('dataFile.txt', 'a', encoding='utf-8') as fileD:
                             fileD.write('[∩] Номер: +'+str(number)+'\n')
