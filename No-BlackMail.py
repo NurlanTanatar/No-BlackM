@@ -157,6 +157,8 @@ try:
                             fileD.write(f'\n[-] Все имена с ссылок: {str(name)}\n\n')
                         if name[0] in name:
                             print(f'\n{YELLOW}{BOLD}[+] {LI_G}Все имена с ссылок: {str(name)}')
+                        else:
+                           pass
                         print(f'{YELLOW}{BOLD}[+] {LI_G}Данные о номере: +{str(number)} добавлены в файл {RESET}dataFile.txt')
                 
                 get_url_name_avito(number)
