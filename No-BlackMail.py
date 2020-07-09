@@ -14,6 +14,21 @@ LI_G='\033[92m'
 F_CL = '\033[0m'
 
 os.system('clear')
+if os.path.exists('dataFile.txt'):
+   print(f'{YELLOW}{BOLD}[1] {LI_G}Перезаписать данные в файл.{RESET}')
+   print(f'{YELLOW}{BOLD}[2] {LI_G}Добавить к остальным.{RESET}\n')
+   dataV = input(f'{YELLOW}{BOLD}[~] {LI_G}Выберите метод: {RESET}')
+   if dataV == '1':
+      os.remove('dataFile.txt')
+      os.system('clear') 
+      print(f'{YELLOW}{BOLD}[+] {LI_G}Данные будут:{RESET} Перезаписаны\n')
+   elif dataV == '2':
+      os.system('clear')
+      print(f'{YELLOW}{BOLD}[+] {LI_G}Данные будут:{RESET} Добавляться\n')
+   else:
+      sys.exit(f'{YELLOW}{BOLD}[+] {RED}Выберите метод работы пожалуйста{RESET}')
+else:
+   pass
 print(f'{YELLOW}{BOLD}[~] {LI_G}Разработчик инструмента отказывается брать на себя ответственность за ваши действия: {RESET}')
 def getNumber():
     try:
