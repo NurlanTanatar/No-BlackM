@@ -14,6 +14,7 @@ URL_L = '\033[36m'
 LI_G='\033[92m'
 F_CL = '\033[0m'
 
+os.system('clear')
 print(f'{YELLOW}{BOLD}[!!] {RED}Разработчик инструмента отказывается брать на себя ответственность за ваши действия: {RESET}')
 sleep(2)
 os.system('clear')
