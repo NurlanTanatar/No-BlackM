@@ -117,7 +117,7 @@ try:
                     contentAV = bs(resAV.text, 'html.parser')
                     h1 = contentAV.find('h1')
                     if h1.text == '503 Service Temporarily Unavailable':
-                        print(f'{YELLOW}{BOLD}[!] {RED}Ваш запрос временно заблокирован. Пожалуйста, подождите 1-2 минуты.{RESET}')
+                        print(f'{YELLOW}{BOLD}[!] {RED}Ваш запрос временно заблокирован. Пожалуйста, подождите 6-15 минут.{RESET}')
                     else:
                         count = 0
 
@@ -182,4 +182,4 @@ try:
 except KeyboardInterrupt:
     print(f'\n{YELLOW}{BOLD}[!] {RED}Принудительная остановка кода{RESET}')
 except:
-    print(f'{YELLOW}{BOLD}[!] {RED}Возможно, плохое интернет-соединение, попробуйте перезагрузить или напишите мне:{RESET}\n{YELLOW}{BOLD}[+] {LI_G}Telegram:{RESET} @FELIX4')
+    print(f'{YELLOW}{BOLD}[!] {RED}Возможно, плохое интернет-соединение, попробуйте перезагрузить или напишите мне:{RESET}\n{YELLOW}{BOLD}[+] {RED}Telegram:{YELLOW} @FELIX4')
