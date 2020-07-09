@@ -1,4 +1,5 @@
 import requests, os, sys
+from time import sleep
 from bs4 import BeautifulSoup as bs
 
 dataAV = []
@@ -13,6 +14,8 @@ URL_L = '\033[36m'
 LI_G='\033[92m'
 F_CL = '\033[0m'
 
+print(f'{YELLOW}{BOLD}[!!] {RED}Разработчик инструмента отказывается брать на себя ответственность за ваши действия: {RESET}')
+sleep(2)
 os.system('clear')
 if os.path.exists('dataFile.txt'):
    print(f'{YELLOW}{BOLD}[1] {LI_G}Перезаписать данные в файл.{RESET}')
@@ -29,7 +32,7 @@ if os.path.exists('dataFile.txt'):
       sys.exit(f'{YELLOW}{BOLD}[+] {RED}Выберите метод работы пожалуйста{RESET}')
 else:
    pass
-print(f'{YELLOW}{BOLD}[~] {LI_G}Разработчик инструмента отказывается брать на себя ответственность за ваши действия: {RESET}')
+
 def getNumber():
     try:
         while type:
