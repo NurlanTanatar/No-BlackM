@@ -15,7 +15,7 @@ LI_G='\033[92m'
 F_CL = '\033[0m'
 
 os.system('clear')
-print(f'{YELLOW}{BOLD}[!!] {RED}Разработчик инструмента отказывается брать на себя ответственность за ваши действия: {RESET}')
+print(f'{YELLOW}{BOLD}[!!] {RED}Разработчик инструмента отказывается\nбрать на себя ответственность за ваши действия: {RESET}')
 sleep(3.7)
 os.system('clear')
 if os.path.exists('dataFile.txt'):
