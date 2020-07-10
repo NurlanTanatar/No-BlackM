@@ -39,7 +39,7 @@ if os.path.exists('dataFile.txt'):
       sys.exit(f'{YELLOW}{BOLD}[+] {RED}Выберите метод работы пожалуйста{RESET}')
 else:
    pass
-
+os.system('clear')
 def getNumber():
     try:
         while type:
