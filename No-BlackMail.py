@@ -8,36 +8,44 @@ UNDERLINE = '\033[04m'
 GREEN = '\033[32m'
 YELLOW = '\033[93m'
 RED ='\033[31m'
+CYAN = '\033[36m'
 BOLD = '\033[01m'
 URL_L = '\033[36m'
 LI_G='\033[92m'
 F_CL = '\033[0m'
 
+
 if os.path.exists('.banner_840'):
     pass
 else:
     os.system('clear')
-    bannerTX = open('README.md', encoding='utf-8').read()
-    print(bannerTX[264:855])
-    print(f'{LI_G}Этот текст покажется лишь один раз!{RESET}')
-    open('.banner_840','w')
-    input(f'{LI_G}Напишите что нибудь чтобы очистить экран: {RESET}')
+    try:
+        bannerTX = open('README.md', encoding='utf-8').read()
+        print(bannerTX[265:855])
+        print(f'{LI_G}Этот текст покажется лишь один раз!{RESET}')
+        open('.banner_840','w')
+        input(f'{LI_G}Напишите что нибудь чтобы очистить экран: {RESET}')
+    except FileNotFoundError:
+        os.system('clear')
     os.system('clear')
 
 if os.path.exists('dataFile.txt'):
-   os.system('clear')
-   print(f'{YELLOW}{BOLD}[1] {LI_G}Перезаписать данные в файл.{RESET}')
-   print(f'{YELLOW}{BOLD}[2] {LI_G}Добавить к остальным.{RESET}\n')
-   dataV = input(f'{YELLOW}{BOLD}[~] {LI_G}Выберите метод: {RESET}')
-   if dataV == '1':
-      os.remove('dataFile.txt')
-      os.system('clear') 
-      print(f'{YELLOW}{BOLD}[+] {LI_G}Данные будут:{RESET} Перезаписаны\n')
-   elif dataV == '2':
-      os.system('clear')
-      print(f'{YELLOW}{BOLD}[+] {LI_G}Данные будут:{RESET} Добавляться\n')
-   else:
-      sys.exit(f'{YELLOW}{BOLD}[+] {RED}Выберите метод работы пожалуйста{RESET}')
+    try:
+        os.system('clear')
+        print(f'{CYAN}{BOLD}[1] {LI_G}Перезаписать данные в файл.{RESET}')
+        print(f'{CYAN}{BOLD}[2] {LI_G}Добавить к остальным.{RESET}\n')
+        dataV = input(f'{CYAN}{BOLD}[~] {LI_G}Выберите метод: {RESET}')
+        if dataV == '1':
+            os.remove('dataFile.txt')
+            os.system('clear') 
+            print(f'{YELLOW}{BOLD}[+] {LI_G}Данные будут:{RESET} Перезаписаны\n')
+        elif dataV == '2':
+            os.system('clear')
+            print(f'{YELLOW}{BOLD}[+] {LI_G}Данные будут:{RESET} Добавляться\n')
+        else:
+            sys.exit(f'{YELLOW}{BOLD}[+] {RED}Выберите метод работы пожалуйста{RESET}')
+    except KeyboardInterrupt:
+        sys.exit(f'\n{CYAN}{BOLD}[!] {RED}Принудительная остановка кода{RESET}')
 else:
    pass
 os.system('clear')
@@ -72,6 +80,8 @@ try:
             print(f'{YELLOW}{BOLD}[+] {LI_G}Локация:{F_CL} {country["location"]}{RESET}')
             print(f'{YELLOW}{BOLD}[+] {LI_G}Язык:{F_CL} {country["lang"]}{RESET}')
             break
+    except KeyboardInterrupt:
+        sys.exit(f'\n{YELLOW}{BOLD}[!] {RED}Принудительная остановка кода..{RESET}')
     except:
         print(f'{YELLOW}{BOLD}[!] {RED}Данные Страна/Язык не найдены{RESET}')
         pass
@@ -88,6 +98,8 @@ try:
                 print(f'{YELLOW}{BOLD}[+] {LI_G}Название:{F_CL} {region["name"]}{RESET}')
             print(f'{YELLOW}{BOLD}[+] {LI_G}Округ:{F_CL} {region["okrug"]}{RESET}')
             break
+    except KeyboardInterrupt:
+        sys.exit(f'\n{YELLOW}{BOLD}[!] {RED}Принудительная остановка кода..{RESET}')
     except:
         print(f'{YELLOW}{BOLD}[!] {RED}Данные Область/Край не найдены{RESET}')
 
@@ -97,6 +109,8 @@ try:
             print(f'{YELLOW}{BOLD}[+] {LI_G}Столица:{F_CL} {capital["name"]}{RESET}')
             print(f'{YELLOW}{BOLD}[+] {LI_G}Код домашнего номера столицы:{F_CL} +{str(capital["telcod"])}{RESET}')
             break
+    except KeyboardInterrupt:
+        sys.exit(f'\n{YELLOW}{BOLD}[!] {RED}Принудительная остановка кода..{RESET}')
     except:
         print(f'{YELLOW}{BOLD}[!] {RED}Данные Код/Столица не найдены{RESET}')
 
@@ -108,6 +122,8 @@ try:
             print(f'{YELLOW}{BOLD}[+] {LI_G}Оператор:{F_CL} {data["oper_brand"]}{RESET}')
             print(f'{YELLOW}{BOLD}[+] {LI_G}Номера:{F_CL} {str(data["def"])}{RESET}')
             break
+    except KeyboardInterrupt:
+        sys.exit(f'\n{YELLOW}{BOLD}[!] {RED}Принудительная остановка кода..{RESET}')
     except:
         print(f'{YELLOW}{BOLD}[!] {RED}Данные Город/Оператор не найдены{RESET}')
     if num_P['limit'] == 0:
@@ -169,7 +185,7 @@ try:
             get_url_name_avito(number)
             
         except KeyboardInterrupt:
-            print(f'\n{YELLOW}{BOLD}[!] {RED}Принудительная остановка кода{RESET}')
+            sys.exit(f'\n{YELLOW}{BOLD}[!] {RED}Принудительная остановка кода{RESET}')
 
         except:
             with open('dataFile.txt', 'a', encoding='utf-8') as fileD:
