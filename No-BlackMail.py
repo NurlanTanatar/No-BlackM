@@ -194,7 +194,7 @@ try:
                     fileD.write(data +'\n')
                 fileD.write(f'[-] https://api.whatsapp.com/send?phone={str(number)}&text=Hello,%20this%20is%20NO-Blackmail')
                 fileD.write(f'\n[-] Все имена с ссылок: {str(name)}\n\n')
-            print(f'{YELLOW}{BOLD}[!] {RED}Ваш запрос временно заблокирован. Пожалуйста, подождите 2-6 минуты.{RESET}')
+            print(f'{YELLOW}{BOLD}[!] {RED}Ваш запрос временно заблокирован или Ссылки/Имена не найдены. Пожалуйста, подождите 4-10 минуты.{RESET}')
                 
         print(f'{YELLOW}{BOLD}[+] {LI_G}Создан прямая ссылка в WhatsApp: {RESET}')
         print(f'{YELLOW}{BOLD}[+] {URL_L}{UNDERLINE}https://api.whatsapp.com/send?phone={str(number)}&text=Hello,%20this%20is%20No-BlackMail{RESET}')
