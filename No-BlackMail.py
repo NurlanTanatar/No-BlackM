@@ -26,7 +26,7 @@ else:
         open('.banner_840','w')
         input(f'{LI_G}Напишите что нибудь чтобы очистить экран: {RESET}')
     except FileNotFoundError:
-        os.system('clear')
+        pass
     os.system('clear')
 
 if os.path.exists('dataFile.txt'):
@@ -52,6 +52,24 @@ os.system('clear')
 def getNumber():
     try:
         while type:
+            try:
+                versioUR = requests.get('https://github.com/DataSC3/No-BlackM/commits/master')
+                versioURL = bs(versioUR.text, 'html.parser')
+                get_version = versioURL.find_all('div', class_='commit-desc')
+                with open('.banner_840', 'r') as fileF:
+                    try:
+                        versionUP = fileF.read().split(':')[1]
+                        if len(get_version) > int(versionUP):
+                            with open('.banner_840', 'w') as fileW:
+                                fileW.write('Version:'+str(len(get_version)))
+                                print(f'{YELLOW}{BOLD}[!] {RED}Доступно новое обновление!\n')
+                        else:
+                            pass
+                    except IndexError:
+                        with open('.banner_840', 'w') as fileW:
+                            fileW.write('Version:'+str(len(get_version)))
+            except:
+                pass
             print(f'{YELLOW}{BOLD}[~] {LI_G}Пример: {RESET}7ХХХХХХХХХ')
             getTempNumber=input(f'{YELLOW}{BOLD}[~] {LI_G}Введите номер: {RESET}+')
             try:                                      
