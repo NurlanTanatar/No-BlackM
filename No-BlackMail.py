@@ -18,13 +18,14 @@ if os.path.exists('.banner_840'):
 else:
     os.system('clear')
     bannerTX = open('README.md', encoding='utf-8').read()
-    print(bannerTX[265:729])
+    print(bannerTX[265:716])
     print(f'{LI_G}Этот текст покажется лишь один раз!{RESET}')
     open('.banner_840','w')
     input(f'{LI_G}Напишите что нибудь чтобы очистить экран: {RESET}')
     os.system('clear')
 
 if os.path.exists('dataFile.txt'):
+   os.system('clear')
    print(f'{YELLOW}{BOLD}[1] {LI_G}Перезаписать данные в файл.{RESET}')
    print(f'{YELLOW}{BOLD}[2] {LI_G}Добавить к остальным.{RESET}\n')
    dataV = input(f'{YELLOW}{BOLD}[~] {LI_G}Выберите метод: {RESET}')
