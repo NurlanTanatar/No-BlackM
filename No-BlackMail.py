@@ -18,7 +18,7 @@ if os.path.exists('.banner_840'):
 else:
     os.system('clear')
     bannerTX = open('README.md', encoding='utf-8').read()
-    print(bannerTX[265:770])
+    print(bannerTX[264:855])
     print(f'{LI_G}Этот текст покажется лишь один раз!{RESET}')
     open('.banner_840','w')
     input(f'{LI_G}Напишите что нибудь чтобы очистить экран: {RESET}')
