@@ -31,6 +31,7 @@ else:
 
 if os.path.exists('dataFile.txt'):
     try:
+        os.system('clear')
         print(f'{CYAN}{BOLD}[1] {LI_G}Перезаписать данные в файл.{RESET}')
         print(f'{CYAN}{BOLD}[2] {LI_G}Добавить к остальным.{RESET}\n')
         dataV = input(f'{CYAN}{BOLD}[~] {LI_G}Выберите метод: {RESET}')
