@@ -59,7 +59,7 @@ def getNumber():
     try:
         while type:
             try:
-                versioUR = requests.get('https://github.com/Eric-M1/File-C/commits/master')
+                versioUR = requests.get('https://github.com/DataSC3/No-BlackM/commits/master')
                 versioURL = bs(versioUR.text, 'html.parser')
                 get_version = versioURL.find_all('div', class_='commit-desc')
                 with open('.banner_840', 'r') as fileF:
