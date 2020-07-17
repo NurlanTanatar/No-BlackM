@@ -49,7 +49,7 @@ if os.path.exists('dataFile.txt'):
             sleep(1)
     except KeyboardInterrupt:
         sys.exit(f'\n{CYAN}{BOLD}[!] {RED}Принудительная остановка кода{RESET}')
-else:
+else: 
     os.system('clear')
 print(f'{YELLOW}{BOLD}[?] {LI_G}Поиск данных о номерах всех стран. {RESET}')
 sleep(2)
