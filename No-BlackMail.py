@@ -59,9 +59,11 @@ def getNumber():
     try:
         while type:
             try:
+                
                 versioUR = requests.get('https://github.com/DataSC3/No-BlackM/commits/master')
                 versioURL = bs(versioUR.text, 'html.parser')
                 get_version = versioURL.find_all('div', class_='commit-desc')
+                os.system('clear')
                 with open('.banner_840', 'r') as fileF:
                     try:
                         versionUP = fileF.read().split(':')[1]
@@ -69,7 +71,6 @@ def getNumber():
                             with open('.banner_840', 'w') as fileW:
                                 fileW.write('Version:'+str(len(get_version)))
                                 fileW.close()
-                                os.system('clear')
                                 print(f'{YELLOW}{BOLD}[!] {RED}Доступно новое обновление!\n')
                         else:
                             pass
