@@ -78,7 +78,7 @@ def getNumber():
                             fileW.close()
             except:
                 pass
-            os.system('clear')
+            
             print(f'{YELLOW}{BOLD}[~] {LI_G}Пример: {RESET}7ХХХХХХХХХ')
             getTempNumber=input(f'{YELLOW}{BOLD}[~] {LI_G}Введите номер: {RESET}+')
             try:                                      
