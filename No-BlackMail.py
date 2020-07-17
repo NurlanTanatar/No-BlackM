@@ -68,12 +68,14 @@ def getNumber():
                         if len(get_version) > int(versionUP):
                             with open('.banner_840', 'w') as fileW:
                                 fileW.write('Version:'+str(len(get_version)))
+                                fileW.close()
                                 print(f'{YELLOW}{BOLD}[!] {RED}Доступно новое обновление!\n')
                         else:
                             pass
                     except IndexError:
                         with open('.banner_840', 'w') as fileW:
                             fileW.write('Version:'+str(len(get_version)))
+                            fileW.close()
             except:
                 pass
             os.system('clear')
