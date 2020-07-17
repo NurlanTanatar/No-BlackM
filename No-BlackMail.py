@@ -69,6 +69,7 @@ def getNumber():
                             with open('.banner_840', 'w') as fileW:
                                 fileW.write('Version:'+str(len(get_version)))
                                 fileW.close()
+                                os.system('clear')
                                 print(f'{YELLOW}{BOLD}[!] {RED}Доступно новое обновление!\n')
                         else:
                             pass
