@@ -29,3 +29,11 @@ pip install bs4
 git clone https://github.com/DataSC3/No-BlackM
 cd No-BlackM
 python No-BlackMail.py
+
+cmd:
+**Прежде чем скачивать скрипт, установите питон 3.х.х и git** 
+pip install requests
+pip install bs4 
+git clone https://github.com/DataSC3/No-BlackM
+cd No-BlackM
+python No-BlackMail.py
