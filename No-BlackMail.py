@@ -17,43 +17,43 @@ F_CL = '\033[0m'
 if os.path.exists('.banner_840'):
     pass
 else:
-    os.system('clear')
+    os.system('cls')
     try:
         bannerTX = open('README.md', encoding='utf-8').read()
         print(bannerTX[265:855])
         print(f'{LI_G}Этот текст покажется лишь один раз!{RESET}')
         open('.banner_840','w')
         input(f'{LI_G}Напишите что нибудь чтобы очистить экран: {RESET}')
-        os.system('clear')
+        os.system('cls')
     except FileNotFoundError:
         pass
     
 if os.path.exists('dataFile.txt'):
     try:
-        os.system('clear')
+        os.system('cls')
         print(f'{CYAN}{BOLD}[1] {LI_G}Перезаписать данные в файл.{RESET}')
         print(f'{CYAN}{BOLD}[ENTER] {LI_G}Добавить к остальным.{RESET}\n')
         dataV = input(f'{CYAN}{BOLD}[~] {LI_G}Выберите метод: {RESET}')
         if dataV == '1':
             os.remove('dataFile.txt')
-            os.system('clear') 
+            os.system('cls') 
             print(f'{YELLOW}{BOLD}[+] {LI_G}Данные будут:{RESET} Перезаписаны')
             sleep(1)
         elif dataV == '2':
-            os.system('clear')
+            os.system('cls')
             print(f'{YELLOW}{BOLD}[+] {LI_G}Данные будут:{RESET} Добавлены к остальным')
             sleep(1)
         else:
-            os.system('clear')
+            os.system('cls')
             print(f'{YELLOW}{BOLD}[+] {LI_G}Данные будут:{RESET} Добавлены к остальным')
             sleep(1)
     except KeyboardInterrupt:
         sys.exit(f'\n{CYAN}{BOLD}[!] {RED}Принудительная остановка кода{RESET}')
 else: 
-    os.system('clear')
+    os.system('cls')
 print(f'{YELLOW}{BOLD}[?] {LI_G}Поиск данных о номерах всех стран. {RESET}')
 sleep(2)
-os.system('clear')
+os.system('cls')
 print(f'{YELLOW}{BOLD}[#] {LI_G}Подготовка... {RESET}')
 def getNumber():
     try:
@@ -63,7 +63,7 @@ def getNumber():
                 versioUR = requests.get('https://github.com/DataSC3/No-BlackM/commits/master')
                 versioURL = bs(versioUR.text, 'html.parser')
                 get_version = versioURL.find_all('div', class_='commit-desc')
-                os.system('clear')
+                os.system('cls')
                 with open('.banner_840', 'r') as fileF:
                     try:
                         versionUP = fileF.read().split(':')[1]
