@@ -2,7 +2,7 @@
 
 ## Общая информация
 Разработчик: @FELIX4\
-Группа в Telegram: https://t.me/joinchat/KAPLfBzkAcB1ccnR
+Группа в Telegram: https://t.me/No_Black_Mail
 
 ### Чем занимается данный скрипт
 * Поиск данных по номеру телефона
