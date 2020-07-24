@@ -1,7 +1,7 @@
 # No-BlackM Beta: v:1.0
 
 ## Общая информация
-Разработчик: @FELIX4
+Разработчик: @FELIX4\
 Группа в Telegram: https://t.me/joinchat/KAPLfBzkAcB1ccnR
 
 ### Чем занимается данный скрипт
