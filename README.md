@@ -35,4 +35,4 @@ pip install requests bs4
 
 ## Использование
 Перейдите в папку со скриптом (если в Windows - откройте в этой папке консоль)\
-Запустите скрипт командой python3 No-BlackMail.py (Windows - python No-BlackMail.py)
+Запустите скрипт командой `python3 No-BlackMail.py` (Windows - `python No-BlackMail.py`)
