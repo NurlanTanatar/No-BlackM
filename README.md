@@ -21,19 +21,16 @@
 Инструмент предназначен для людей, попавших в безвыходную ситуацию. Которые по каким-то непонятным причинам не смогли получить
 помощь со стороны правоохранительных органов и у которых будет что сказать П.Органам.       
 
-Termux:
-pkg install python\
-apt install git\
-pip install requests\
-pip install bs4\
-git clone https://github.com/DataSC3/No-BlackM\
-cd No-BlackM\
-python No-BlackMail.py\
-
-cmd:
-**Прежде чем скачивать скрипт, установите питон 3.х.х и git**\
-pip install requests\
-pip install bs4\
-git clone https://github.com/DataSC3/No-BlackM \
-cd No-BlackM\
-python No-BlackMail.py
+## Установка
+### Termux
+```Bash
+$ pkg install git python
+$ pip install requests bs4
+$ git clone https://github.com/DataSC3/No-BlackM
+```
+### Windows (cmd):
+**Прежде чем скачивать скрипт, установите питон 3.х.х и git**
+```Bash
+pip install requests bs4
+git clone https://github.com/DataSC3/No-BlackM
+```
