@@ -35,6 +35,7 @@ def getNumber():
 
     return number
 
+
 def get_url_name_avito(number):
     resAV = requests.get('https://mirror.bullshit.agency/search_by_phone/'+str(number))
     contentAV = bs(resAV.text, 'html.parser')
