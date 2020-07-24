@@ -6,10 +6,8 @@
 
 - В блищее время будет обновление.
 - Telegram: FELIX4
-- Группа в Telegram: https://t.me/joinchat/KAPLfBzkAcB1ccnR
 
 Разработчик: @FELIX4
-Наша группа в Telegram: https://t.me/joinchat/KAPLfBzkAcB1ccnR
 
 Разработчик данного инструмента отказывается принимать 
 ответственность за действия 
