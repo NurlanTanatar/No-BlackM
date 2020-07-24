@@ -22,18 +22,18 @@
 помощь со стороны правоохранительных органов и у которых будет что сказать П.Органам.       
 
 Termux:
-pkg install python
-apt install git 
-pip install requests
-pip install bs4 
-git clone https://github.com/DataSC3/No-BlackM
-cd No-BlackM
-python No-BlackMail.py
+pkg install python\
+apt install git\
+pip install requests\
+pip install bs4\
+git clone https://github.com/DataSC3/No-BlackM\
+cd No-BlackM\
+python No-BlackMail.py\
 
 cmd:
-**Прежде чем скачивать скрипт, установите питон 3.х.х и git** 
-pip install requests
-pip install bs4 
-git clone https://github.com/DataSC3/No-BlackM
-cd No-BlackM
-python No-BlackMail.py
+**Прежде чем скачивать скрипт, установите питон 3.х.х и git**\
+pip install requests\
+pip install bs4\
+git clone https://github.com/DataSC3/No-BlackM\
+cd No-BlackM\
+python No-BlackMail.py\
