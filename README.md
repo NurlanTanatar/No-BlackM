@@ -26,8 +26,13 @@ $ git clone https://github.com/DataSC3/No-BlackM
 ```
 ### Windows (cmd):
 **Прежде чем скачивать скрипт, установите питон 3 версии**\
-[Питон можно скачать тут](https://www.python.org/downloads/)
+[Питон можно скачать тут](https://www.python.org/downloads/)\
+После установки, откройте консоль и введите:
 ```Bash
 pip install requests bs4
-git clone https://github.com/DataSC3/No-BlackM
 ```
+[Затем скачайте репозиторий отсюда](https://github.com/AlexCr4ckPentest/No-BlackM) и распакуйте в удобное место
+
+## Использование
+Перейдите в папку со скриптом (если в Windows - откройте в этой папке консоль)\
+Запустите скрипт командой python3 No-BlackMail.py (Windows - python No-BlackMail.py)
