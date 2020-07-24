@@ -26,7 +26,7 @@ $ git clone https://github.com/DataSC3/No-BlackM
 ```
 ### Windows (cmd):
 **Прежде чем скачивать скрипт, установите питон 3 версии**\
-[Питон можно скачать тут](https://www.python.org/downloads/)(**ВАЖНО: поставьте галочку Add to PATH при установке**)\
+[Питон можно скачать тут](https://www.python.org/downloads/) (**ВАЖНО: поставьте галочку Add to PATH при установке**)\
 После установки, откройте консоль и введите:
 ```Bash
 pip install requests bs4
