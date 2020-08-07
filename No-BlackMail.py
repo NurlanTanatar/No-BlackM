@@ -1,6 +1,15 @@
-import requests, os, sys
-from time import sleep
-from bs4 import BeautifulSoup as bs
+try:
+    import requests, os, sys
+    from time import sleep
+    from bs4 import BeautifulSoup as bs
+except:
+    import install_requirements  # install packages
+
+    import requests, os, sys
+    from time import sleep
+    from bs4 import BeautifulSoup as bs
+
+
 # Мой Telegram: @FELIX4 - Для вопросов и поддержки (советы и т.д)
 # Наша группа в Telegram: https://t.me/No_Black_Mail_chat - Там вы можете предлогать свои идеи и т.д
 
